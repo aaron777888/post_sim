@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAJERO SIMULADOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <section class="container-validar">
+            <h2 class="parr">Digite los 8 caracteres del DNI y 4 del Password para iniciar :)</h2>
+            <form autocomplete="off">
+                <h3 class="text_form">VALIDE SU IDENTIDAD</h3>
+                <input type="text" placeholder="DNI" id="user">
+                <input type="password" placeholder="Contraseña" id="contra">
+
+                <a id="btn-validar" href="#nav">Iniciar</a> 
+            </form>
+        </section>
+        <div class="container-flecha">
+            
+            <img src="https://cdn-icons-png.flaticon.com/512/162/162720.png" alt="deslice">
+        </div>
+    </header>
+    <section class="container__cajero" id="nav">
+        <main class="container">
+            <h2>CAJERO 1</h2>
+            <input type="text" id="input-deposito" placeholder="S/." autocomplete="off" hidden="">
+    
+            <div class="botones" id="pages">
+                <button id="btn-add-d">Depositar</button>
+                <button id="btn-add-r">Retirar</button>
+            </div>
+            
+            <div class="mensaje">
+                <p id="error"></p>
+            </div>
+            <div class="teclado">
+                <button id="btn-tecla-a" value="0">0</button>
+                <button id="btn-tecla-b" value="1">1</button>
+                <button id="btn-tecla-c" value="2">2</button>
+                <button id="btn-tecla-d" value="3">3</button>
+                <button id="btn-tecla-e" value="4">4</button>
+                <button id="btn-tecla-f" value="5">5</button>
+                <button id="btn-tecla-g" value="6">6</button>
+                <button id="btn-tecla-h" value="7">7</button>
+                <button id="btn-tecla-i" value="8">8</button>
+                <button id="btn-tecla-j" value="9">9</button>
+                <button id="btn-tecla-k" onclick="borrador()">&larr;</button>
+                <button id="btn-tecla-l" >.</button>
+            </div>
+                <button id="reload">REINICIAR OPERACIÓN</button>
+        </main>
+    </section>
+    <footer>
+        <div class="container-footer">
+            <h1>&copy;AaronLomas | </h1>
+            <p class="text_footer">PrograminG</p>
+            <p class="text_footer_x">Javascript</p>
+        </div>
+        
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
